@@ -8,12 +8,11 @@
  */
 int bfree(void **ptr)
 {
-    if (ptr)
-    {
-        free(*ptr);
-        *ptr = NULL;
-        return (1);
-    }
-    return (0);
+	if (ptr)
+	{
+		free(*ptr);
+		*ptr = NULL;
+		return (1);
+	}
+	return (0);
 }
-
